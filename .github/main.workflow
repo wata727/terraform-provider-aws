@@ -7,7 +7,7 @@ workflow "Check Linters" {
 }
 
 action "Terraform Provider Linter" {
-    uses = "bflad/tfproviderlint-github-action@latest"
+    uses = "bflad/tfproviderlint-github-action@master"
 
     env  = {
         GOFLAGS = "-mod=vendor"
